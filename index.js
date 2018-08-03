@@ -1,6 +1,7 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 const os = require("os")
+const cors = require("cors")
 
 // -----------------------------------------------------------------------------
 
@@ -15,6 +16,7 @@ const PORT = process.env.PORT || 3000
 
 // -----------------------------------------------------------------------------
 
+app.use(cors())
 app.use(bodyParser.json())
 
 // -----------------------------------------------------------------------------
