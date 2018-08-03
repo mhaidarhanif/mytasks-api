@@ -1,6 +1,6 @@
 const fs = require("fs")
 
-const DATA_JSON = "../data/index.json"
+const DATA_JSON = "./data/index.json"
 
 const file = {
   read: () => {
