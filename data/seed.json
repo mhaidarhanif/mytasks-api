@@ -1,0 +1,17 @@
+{
+  "counter": 3,
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Write first task"
+    },
+    {
+      "id": 2,
+      "text": "Schedule task action"
+    },
+    {
+      "id": 3,
+      "text": "Do it!"
+    }
+  ]
+}
