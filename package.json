@@ -1,0 +1,27 @@
+{
+  "name": "mytasks-api",
+  "version": "0.1.0",
+  "description": "MyTasks API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "node-dev index",
+    "mon": "nodemon index",
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhaidarh/mytasks-api.git"
+  },
+  "keywords": [
+    "mytasks",
+    "api",
+    "backend"
+  ],
+  "author": "M Haidar Hanif <npm@mhaidarhanif.com> (https://mhaidarhanif.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhaidarh/mytasks-api/issues"
+  },
+  "homepage": "https://github.com/mhaidarh/mytasks-api#readme"
+}
