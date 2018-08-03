@@ -21,7 +21,8 @@ app.use(bodyParser.json())
 
 app.get(`/`, root.get)
 
-app.get(`/tasks/search`, tasks.search)
+app.get(`/tasks/search`, tasks.searchWithQuery)
+app.post(`/tasks/search`, tasks.searchWithBody)
 app.get(`/tasks`, tasks.get)
 app.get(`/tasks/:id`, tasks.getOneById)
 app.post(`/tasks`, tasks.createOne)

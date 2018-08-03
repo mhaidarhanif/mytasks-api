@@ -1,5 +1,5 @@
 const DATA = {
-  counter: 2,
+  counter: 3,
   tasks: [
     {
       id: 1,
@@ -17,11 +17,13 @@ const DATA = {
 }
 
 const tasks = {
+  // ---------------------------------------------------------------------------
   // GET /tasks
   get: (req, res) => {
     res.status(200).send(DATA.tasks)
   },
 
+  // ---------------------------------------------------------------------------
   // GET /tasks/:id
   getOneById: (req, res) => {
     const task = DATA.tasks.find(item => {
@@ -34,6 +36,7 @@ const tasks = {
       })
   },
 
+  // ---------------------------------------------------------------------------
   // POST /tasks
   createOne: (req, res) => {
     DATA.counter += 1
@@ -52,8 +55,9 @@ const tasks = {
       })
   },
 
+  // ---------------------------------------------------------------------------
   // GET /tasks/search?text=first
-  search: (req, res) => {
+  searchWithQuery: (req, res) => {
     const text = req.query.text
     const data = DATA.tasks.filter(item => {
       return item.text.toLowerCase().includes(text.toLowerCase())
@@ -62,7 +66,24 @@ const tasks = {
     if (data) res.status(200).send(data)
     else
       res.status(404).send({
-        message: `Search task is not found`
+        action: `Search`,
+        message: `Query is unavailable or task is not found`
+      })
+  },
+
+  // ---------------------------------------------------------------------------
+  // POST /tasks/search
+  searchWithBody: (req, res) => {
+    const text = req.body.text
+    const data = DATA.tasks.filter(item => {
+      return item.text.toLowerCase().includes(text.toLowerCase())
+    })
+
+    if (data) res.status(200).send(data)
+    else
+      res.status(404).send({
+        action: `Search`,
+        message: `Task is not found`
       })
   }
 }
