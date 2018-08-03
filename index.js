@@ -22,6 +22,8 @@ app.use(bodyParser.json());
 app.get(`/`, root.get);
 
 app.get(`/tasks`, tasks.get)
+app.get(`/tasks/:id`, tasks.getOneById)
+app.post(`/tasks`, tasks.createOne)
 
 // -----------------------------------------------------------------------------
 
