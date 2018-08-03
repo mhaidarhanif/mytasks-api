@@ -17,24 +17,28 @@
         <a href="https://mhaidarhanif.com">Author</a> ·
         <a href="https://impactbyte.com">Company</a>
     </p>
-</p> 
+</p>
 
 ## Features
 
-1. Get all tasks
-2. Create new task
+- Get all tasks
+- Get one task by id
+- Create new task
+- Search existing task
+  - with query
+  - with request body
 
 ## REST API Specification
 
-| Endpoint     | HTTP     | Description
-|--------------|----------|------------
-| `/tasks`     | `GET`    | Get all tasks
-| `/tasks/:id` | `GET`    | Get one task
-| `/tasks`     | `POST`   | Create new task
-| `/tasks`     | `DELETE` | Destroy all tasks
-| `/tasks/:id` | `DELETE` | Destroy one task
-| `/tasks/:id` | `PUT`    | Update one task
-| `/tasks/search?query=xyz` | `GET`    | Search task with query
+| Endpoint        | HTTP     | Description            |
+| --------------- | -------- | ---------------------- |
+| `/tasks`        | `GET`    | Get all tasks          |
+| `/tasks/:id`    | `GET`    | Get one task           |
+| `/tasks`        | `POST`   | Create new task        |
+| `/tasks`        | `DELETE` | Destroy all tasks      |
+| `/tasks/:id`    | `DELETE` | Destroy one task       |
+| `/tasks/:id`    | `PUT`    | Update one task        |
+| `/tasks/search` | `GET`    | Search task with query |
 
 ## License
 
