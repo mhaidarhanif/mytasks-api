@@ -1,0 +1,8 @@
+{
+  "name": "mytasks-api",
+  "description": "MyTasks API",
+  "repository": "https://github.com/mhaidarh/mytasks-api",
+  "logo": "https://mytasks.mhaidarhanif.com/images/mytasks-logo.png",
+  "keywords": ["mytasks", "api", "backend", "node", "express"],
+  "image": "heroku/nodejs"
+}
