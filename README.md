@@ -28,6 +28,8 @@
   - with query
   - with request body
 
+---
+
 ## REST API Specification
 
 | Endpoint        | HTTP     | Description            |
@@ -40,10 +42,64 @@
 | `/tasks/:id`    | `PUT`    | Update one task        |
 | `/tasks/search` | `GET`    | Search task with query |
 
-## License
+---
+
+## Development
+
+### Node.js
+
+```sh
+npm install
+npm run dev
+```
+
+```sh
+> mytasks-api@x.y.z dev /home/username/path/to/mytasks-api
+> node-dev index
+
+MyTasks API is listening on localhost:3000
+```
+
+Access the app on `localhost:3000` via:
+
+- `curl`: <https://curl.haxx.se>
+- `httpie`: <https://httpie.org>
+- `postman`: <https://getpostman.com>
+- `insomnia`: <https://insomnia.rest>
+
+---
+
+## Production
+
+```sh
+npm install
+npm start
+```
+
+---
+
+## Deployment
+
+### Heroku
+
+```sh
+heroku create
+git push heroku master
+heroku open
+```
+
+or
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+---
+
+## Meta
+
+### License
 
 [MIT License](./LICENSE)
 
-## Code of Conduct
+### Code of Conduct
 
 [Contributor Covenant Code of Conduct](./CODE_OF_CONDUCT.md)
