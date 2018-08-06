@@ -1,17 +1,17 @@
-const express = require("express")
-const bodyParser = require("body-parser")
-const os = require("os")
-const cors = require("cors")
+const express = require('express')
+const bodyParser = require('body-parser')
+const os = require('os')
+const cors = require('cors')
 
 // -----------------------------------------------------------------------------
 
-const root = require("./root")
-const tasks = require("./tasks")
+const root = require('./root')
+const tasks = require('./tasks')
 
 // -----------------------------------------------------------------------------
 
 const app = express()
-const HOST = process.env.HOST || os.hostname()
+const HOST = process.env.HOST || os.hostname() || 'localhost'
 const PORT = process.env.PORT || 3000
 
 // -----------------------------------------------------------------------------
